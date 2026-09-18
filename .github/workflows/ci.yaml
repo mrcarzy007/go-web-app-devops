@@ -88,6 +88,8 @@ jobs:
 
     - name: Deploy to EKS via Helm
       run: |
+        ls -ltrh
+        pwd 
         helm upgrade --install go-web-app ./go-web-app-chart
 
     - name: Commit and push updated chart
