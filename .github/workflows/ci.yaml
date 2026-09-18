@@ -90,7 +90,7 @@ jobs:
       run: |
         ls -ltrh
         pwd 
-        helm upgrade --install go-web-app ./go-web-app-chart
+        helm upgrade --install go-web-app ./helm/go-web-app-chart
 
     - name: Commit and push updated chart
       run: |
